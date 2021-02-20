@@ -1,0 +1,38 @@
+<div class="row mb-5">
+  <div
+    class="col-sm-8 col-md-6 col-lg-5 col-10 mx-auto rounded border p-5 bg-white shadow-lg"
+  >
+    <form (ngSubmit)="userLogIn(loginDetail)" #loginDetail="ngForm" class="justify-content-center">
+      <div class="from-group">
+        <label for=""><h3>Login</h3></label>
+      </div>
+      <div class="from-group">
+        <label for="">Username</label>
+        <input
+          type="text"
+          placeholder="Ex: joe@example.com"
+          class="form-control"
+          name="userName"
+          ngModel
+          required
+        />
+      </div>
+      <div class="from-group pt-2">
+        <label for="">Password</label>
+        <input
+          type="text"
+          placeholder="Ex: J#gd69io"
+          class="form-control"
+          name="password"
+          ngModel
+          required
+        />
+      </div>
+      <div class="form-group pt-3">
+        <button type="submit" class="btn btn-primary form-control">
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
